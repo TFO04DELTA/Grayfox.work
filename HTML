@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Fox Industries</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #282c34;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px; /* Adjust based on the fox image size */
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #e84545;
+        }
+
+        #hero {
+            background: linear-gradient(to right, #3a3a3a, #5c5c5c);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            background: #e84545;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background: #d63232;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #e84545;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .status-heading {
+            font-weight: bold;
+            color: #e84545;
+            margin: 10px 0 20px;
+            font-size: 1.5em;
+        }
+
+        .service {
+            background: #3a3a3a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .bullet-points {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        footer {
+            background: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        form {
+            background: #3a3a3a;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            display: block;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            width: 100%;
+            background: #1c1c1c;
+            color: #fff;
+        }
+
+        form button {
+            background: #e84545;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background: #d63232;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="grayfox.png" alt="Gray Fox" />
+            <h1>Gray Fox Industries</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your Partner in Intelligence</h2>
+            <p>Specializing in digital footprint investigations, risk assessments, and signature reduction.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <h3 class="status-heading">Currently Accepting New Clients</h3>
+            <div class="service">
+                <h3>Risk Management</h3>
+                <p>Comprehensive strategies to manage potential risks in your business.</p>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Risk identification and assessment</li>
+                        <li>Mitigation strategies</li>
+                        <li>Ongoing risk monitoring</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <h3>Digital Footprint Investigations</h3>
+                <p>In-depth analysis of your online presence and vulnerabilities.</p>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Social media analysis</li>
+                        <li>Open-source intelligence reports</li>
+                        <li>Exposure risk assessment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <h3>Risk Assessments</h3>
+                <p>Thorough assessments to identify and mitigate risks effectively.</p>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Bespoke risk assessment reports</li>
+                        <li>Vulnerability and threat hunting</li>
+                        <li>Travel risk assessments</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <h3>Signature Reduction</h3>
+                <p>Strategies to minimize your digital footprint and protect your identity.</p>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Digital footprint analysis</li>
+                        <li>Privacy enhancement strategies</li>
+                        <li>Removal of unwanted information</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>At Gray Fox Industries, we are dedicated to providing top-notch risk management solutions tailored to your needs. Our team of experts leverages years of experience and education to help you navigate the complexities of the evolving digital world.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to reach out, please email us at:</p>
+            <p><strong>contact@grayfox.work</strong></p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gray Fox Industries. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
